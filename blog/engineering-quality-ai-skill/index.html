@@ -36,8 +36,8 @@
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
-	animation-name: astroFadeIn; }</style></head> <body data-astro-cid-sckkx6r4> <main class="container" data-astro-cid-sckkx6r4>  <article class="post" data-astro-cid-4sn4zg3r> <a href="/blog" class="back-link" data-astro-cid-4sn4zg3r>← Writing</a> <header class="post-header" data-astro-cid-4sn4zg3r data-astro-transition-scope="astro-frrzg4y5-1"> <div class="post-meta" data-astro-cid-4sn4zg3r> <time datetime="2026-04-05" data-astro-cid-4sn4zg3r>5 April 2026</time> <div class="tags" data-astro-cid-4sn4zg3r> <span class="tag" data-astro-cid-4sn4zg3r>ai</span><span class="tag" data-astro-cid-4sn4zg3r>engineering-quality</span><span class="tag" data-astro-cid-4sn4zg3r>claude-code</span><span class="tag" data-astro-cid-4sn4zg3r>staff-engineering</span><span class="tag" data-astro-cid-4sn4zg3r>devops</span> </div> </div> <h1 class="post-title" data-astro-cid-4sn4zg3r>Engineering Quality as an AI Skill</h1> <div class="tldr" data-astro-cid-4sn4zg3r> <span class="tldr-label" data-astro-cid-4sn4zg3r>tl;dr</span> <span class="tldr-text" data-astro-cid-4sn4zg3r>Run /eng-quality with Claude Code to audit your service across 14 categories, get a prioritised status report, and close gaps iteratively — 10 minutes per update.</span> </div> </header> <div class="prose post-body" data-astro-cid-4sn4zg3r> <p>Engineering quality reviews are one of those things everyone agrees matter and almost no one does consistently. The checklist isn’t the problem — most staff engineers could write it from memory. The problem is sitting down to run it, every quarter, for every service you own.</p>
-<p>I’ve been using a Claude Code skill to handle this. You invoke it, answer questions category by category, and get a status report with P0/P1 actions. More importantly, you can run updates in under ten minutes — revisiting only what was previously incomplete or unknown.</p>
+	animation-name: astroFadeIn; }</style></head> <body data-astro-cid-sckkx6r4> <main class="container" data-astro-cid-sckkx6r4>  <article class="post" data-astro-cid-4sn4zg3r> <a href="/blog" class="back-link" data-astro-cid-4sn4zg3r>← Writing</a> <header class="post-header" data-astro-cid-4sn4zg3r data-astro-transition-scope="astro-frrzg4y5-1"> <div class="post-meta" data-astro-cid-4sn4zg3r> <time datetime="2026-04-05" data-astro-cid-4sn4zg3r>5 April 2026</time> <div class="tags" data-astro-cid-4sn4zg3r> <span class="tag" data-astro-cid-4sn4zg3r>ai</span><span class="tag" data-astro-cid-4sn4zg3r>engineering-quality</span><span class="tag" data-astro-cid-4sn4zg3r>claude-code</span><span class="tag" data-astro-cid-4sn4zg3r>staff-engineering</span><span class="tag" data-astro-cid-4sn4zg3r>devops</span> </div> </div> <h1 class="post-title" data-astro-cid-4sn4zg3r>Engineering Quality as an AI Skill</h1> <div class="tldr" data-astro-cid-4sn4zg3r> <span class="tldr-label" data-astro-cid-4sn4zg3r>tl;dr</span> <span class="tldr-text" data-astro-cid-4sn4zg3r>Run /eng-quality with Claude Code to audit your service across 14 categories, get a prioritised status report, and close gaps iteratively - 10 minutes per update.</span> </div> </header> <div class="prose post-body" data-astro-cid-4sn4zg3r> <p>Engineering quality reviews are one of those things everyone agrees matter and almost no one does consistently. The checklist isn’t the problem - most staff engineers could write it from memory. The problem is sitting down to run it, every quarter, for every service you own.</p>
+<p>I’ve been using a Claude Code skill to handle this. You invoke it, answer questions category by category, and get a status report with P0/P1 actions. More importantly, you can run updates in under ten minutes - revisiting only what was previously incomplete or unknown.</p>
 <hr>
 <h2 id="what-it-does">What it does</h2>
 <p>The skill walks through a structured checklist across 14 categories, records where each aspect is measured, and writes a status report to <code>eng-quality-&#x3C;service>.md</code>. On subsequent runs it loads the existing report and only asks about the gaps.</p>
@@ -52,7 +52,7 @@
 </ul>
 <hr>
 <h2 id="the-checklist">The checklist</h2>
-<p>For each item the skill records two things: status (<code>Yes</code> / <code>No</code> / <code>Partial</code> / <code>Unknown</code>) and where it lives — a URL, a tool name, or a one-line description. Questions are batched by category so the conversation moves fast.</p>
+<p>For each item the skill records two things: status (<code>Yes</code> / <code>No</code> / <code>Partial</code> / <code>Unknown</code>) and where it lives - a URL, a tool name, or a one-line description. Questions are batched by category so the conversation moves fast.</p>
 
 
 
@@ -122,7 +122,7 @@
 <hr>
 <h2 id="the-report">The report</h2>
 <p>After collecting answers, the skill writes a status report in this format:</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold"># Engineering Quality — &#x3C;Service Name></span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold"># Engineering Quality - &#x3C;Service Name></span></span>
 <span class="line"><span style="color:#E1E4E8">Last updated: &#x3C;date></span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#79B8FF;font-weight:bold">## Summary</span></span>
@@ -140,7 +140,7 @@
 <span class="line"></span>
 <span class="line"><span style="color:#79B8FF;font-weight:bold">## P0 Actions</span></span>
 <span class="line"><span style="color:#E1E4E8">Items that are missing or unknown with highest impact:</span></span>
-<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> [ ] &#x3C;item> — &#x3C;why it matters></span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> [ ] &#x3C;item> - &#x3C;why it matters></span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#79B8FF;font-weight:bold">## P1 Actions</span></span>
 <span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> [ ] &#x3C;item></span></span>
