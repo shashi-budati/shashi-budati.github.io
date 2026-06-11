@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="AI removes the implementation bottleneck. What remains is verification, and Rust's compiler has always been built for that."><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="alternate" type="application/rss+xml" title="Shashi Budati" href="/rss.xml"><title>Rust Is the AI Era&#39;s Language — Shashi Budati</title><!-- View Transitions --><meta name="view-transition" content="same-origin"><link rel="stylesheet" href="/_astro/_slug_.BZfvrbtk.css">
+<style>.post[data-astro-cid-4sn4zg3r]{max-width:68ch;padding-top:.5rem}.back-link[data-astro-cid-4sn4zg3r]{display:inline-block;font-size:.85rem;color:var(--muted);margin-bottom:2rem;margin-top:.5rem;transition:color .15s ease}.back-link[data-astro-cid-4sn4zg3r]:hover{color:var(--accent)}.post-header[data-astro-cid-4sn4zg3r]{margin-bottom:2.5rem}.post-meta[data-astro-cid-4sn4zg3r]{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin-bottom:.85rem}.post-meta[data-astro-cid-4sn4zg3r] time[data-astro-cid-4sn4zg3r]{font-family:var(--font-mono);font-size:.8rem;color:var(--muted)}.tags[data-astro-cid-4sn4zg3r]{display:flex;gap:.35rem;flex-wrap:wrap}.post-title[data-astro-cid-4sn4zg3r]{font-size:clamp(1.5rem,4vw,2rem);font-weight:700;line-height:1.25;letter-spacing:-.02em;margin-bottom:1.25rem;color:var(--text)}.tldr[data-astro-cid-4sn4zg3r]{display:flex;gap:.75rem;align-items:flex-start;background:var(--code-bg);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:.9rem 1.1rem}.tldr-label[data-astro-cid-4sn4zg3r]{font-family:var(--font-mono);font-size:.72rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap;padding-top:.1em}.tldr-text[data-astro-cid-4sn4zg3r]{font-size:.9rem;color:var(--muted);line-height:1.55}.post-body[data-astro-cid-4sn4zg3r]{padding-bottom:2rem}.collapsible-section{border:1px solid var(--border);border-radius:6px;margin:1.5rem 0;overflow:hidden}.collapsible-section summary{font-size:1.1rem;font-weight:600;color:var(--text);padding:.85rem 1.1rem;cursor:pointer;list-style:none;display:flex;align-items:center;gap:.6rem;user-select:none;transition:background .15s ease}.collapsible-section summary:hover{background:var(--code-bg)}.collapsible-section summary:before{content:"▶";font-size:.6rem;color:var(--accent);transition:transform .2s ease;flex-shrink:0}.collapsible-section[open] summary:before{transform:rotate(90deg)}.collapsible-section p{padding:0 1.1rem;color:var(--muted);font-size:.95rem;line-height:1.7}.collapsible-section p:first-of-type{padding-top:.85rem}.collapsible-section p:last-of-type{padding-bottom:1.1rem}
+</style><style>[data-astro-transition-scope="astro-frrzg4y5-1"] { view-transition-name: post-rust-ai-era; }@layer astro { ::view-transition-old(post-rust-ai-era) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(post-rust-ai-era) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(post-rust-ai-era) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(post-rust-ai-era) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-frrzg4y5-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-frrzg4y5-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-frrzg4y5-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-frrzg4y5-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-frrzg4y5-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-frrzg4y5-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-frrzg4y5-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-frrzg4y5-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head> <body data-astro-cid-sckkx6r4> <main class="container" data-astro-cid-sckkx6r4>  <article class="post" data-astro-cid-4sn4zg3r> <a href="/blog" class="back-link" data-astro-cid-4sn4zg3r>← Writing</a> <header class="post-header" data-astro-cid-4sn4zg3r data-astro-transition-scope="astro-frrzg4y5-1"> <div class="post-meta" data-astro-cid-4sn4zg3r> <time datetime="2026-06-11" data-astro-cid-4sn4zg3r>11 June 2026</time> <div class="tags" data-astro-cid-4sn4zg3r> <span class="tag" data-astro-cid-4sn4zg3r>rust</span><span class="tag" data-astro-cid-4sn4zg3r>ai</span><span class="tag" data-astro-cid-4sn4zg3r>software-development</span><span class="tag" data-astro-cid-4sn4zg3r>language-design</span> </div> </div> <h1 class="post-title" data-astro-cid-4sn4zg3r>Rust Is the AI Era&#39;s Language</h1> <div class="tldr" data-astro-cid-4sn4zg3r> <span class="tldr-label" data-astro-cid-4sn4zg3r>tl;dr</span> <span class="tldr-text" data-astro-cid-4sn4zg3r>The friction that made Rust impractical is now AI&#39;s problem. The correctness guarantees remain yours.</span> </div> </header> <div class="prose post-body" data-astro-cid-4sn4zg3r> <p>I built a production backend this year. Roughly 12,000 lines of Rust, multiple API protocols, a filter rule engine, a terminal UI, a web UI. Most of it AI-generated, concentrated into a handful of sessions. I didn’t read every line carefully. I didn’t need to. The compiler reviewed it before I did.</p>
+<p>That’s the shift worth paying attention to.</p>
+<hr>
+<h2 id="how-languages-got-here">How languages got here</h2>
+<p>Programming language history is a story about where errors land.</p>
+<p>C trusted the programmer completely. Memory bugs, type coercions, buffer overflows: all deferred to runtime or production. Java automated memory management and caught type errors earlier, but null references and exceptions still escaped into production. Python traded static checks for readability and speed of thought, the right call for a language that became the lingua franca of data science. Go chose deliberate simplicity and fast compilation for teams at scale: readable six months after you wrote it, consistent across a large codebase.</p>
+<p>Each generation moved errors earlier. Each paid a different price for it.</p>
+<p>Rust made a different bet: make the wrong thing impossible to express. Not harder to write. Uncompilable. A data race isn’t a runtime bug; it’s a type error. A null dereference can’t exist; there is no null. An interface violation doesn’t surface in testing; it fails to build. The idea, borrowed from functional programming, is to make illegal states unrepresentable.</p>
+<p>The cost was steep. The borrow checker is a new category of compiler error. Most experienced developers report weeks of fighting it before it clicks. For many teams, for many projects, that cost wasn’t worth paying.</p>
+<hr>
+<h2 id="the-bottleneck-shifts">The bottleneck shifts</h2>
+<p>When you write the code, the bottleneck is implementation bandwidth. When AI writes the code, the bottleneck shifts to verification. How do you know 1,500 lines of AI-generated code actually does what it should?</p>
+<p>In Python, the function runs, returns a wrong value, and you find out when a test fails, or when a user does. In Go, the type system catches some errors, but the language’s deliberate simplicity means a lot of wrong logic compiles without complaint. The verification burden stays with the human either way.</p>
+<p>In Rust, a type mismatch is a compile error. Passing ownership twice is a compile error. A data race is a compile error. The compiler’s verdict comes back before you’ve read a single line of the diff.</p>
+<p>AI-generated Rust either compiles (and has cleared a substantial automated review) or it fails with a specific, actionable error the AI can parse and fix. There’s less surface area for code that’s wrong in a quiet way.</p>
+<p>This doesn’t eliminate logic bugs. But it eliminates the class of bugs hardest to catch in review and easiest for AI to introduce: memory errors, concurrency issues, type violations, interface mismatches. <strong>The compiler is a free second reviewer on every session, every commit.</strong></p>
+<hr>
+<h2 id="what-rust-specifically-gives-you">What Rust specifically gives you</h2>
+<h3 id="traits-as-contracts">Traits as contracts</h3>
+<p>In Python, if a type is supposed to behave like a storage backend, that’s expressed in documentation and convention. When AI implements a new backend, it has to infer the expected interface from existing code and can miss things silently. In Rust, you define a trait. AI doesn’t need to read the codebase; it needs to satisfy the contract. Missed method, wrong return type: compile error with a precise location.</p>
+<h3 id="bounded-context-by-design">Bounded context by design</h3>
+<p>AI works best on focused, bounded problems. A Rust workspace with separate crates for storage, API, ingestion, auth naturally maps to that. When AI works on the ingestion crate, it works with a contained surface area. It doesn’t need to understand scheduler internals to add a new feed format. The boundaries are structural, not just conventional.</p>
+<h3 id="compiler-errors-as-a-feedback-loop">Compiler errors as a feedback loop</h3>
+<p>Rust’s error messages include what went wrong, where, and often a suggested fix. AI can iterate without human interpretation at each step: generate → compile → parse error → fix → repeat. The human reviews the final compiling version, not every intermediate state.</p>
+<hr>
+<h2 id="what-it-doesnt-solve">What it doesn’t solve</h2>
+<p>Compile times are real. Rust builds take longer than Go or Python by a meaningful margin. In practice this matters less than it sounds: agents run the iteration loop, CI handles the builds, and you’re rarely watching a spinner. The real exception is the data layer. If you’re writing ML training code or anything close to numerical computing, Python still owns that space.</p>
+<p>The learning curve hasn’t gone away; it’s changed shape. You’re no longer teaching a team to fight the borrow checker. You’re investing in context engineering instead: AGENTS.md files, domain skill docs, architecture decision records. Structured knowledge that tells agents <em>why</em> the system is shaped the way it is, not just what’s there. That investment compounds: every future session starts with a smarter agent.</p>
+<hr>
+<h2 id="the-right-default-for-new-systems">The right default for new systems</h2>
+<p>The friction that historically made Rust impractical for many teams (the ownership model, the borrow checker, the expertise required to navigate lifetimes) is now largely AI’s problem to handle. The correctness guarantees remain yours.</p>
+<p>Languages win eras because they match the constraints of the people using them. Python matched researchers who needed to think fast. Go matched teams that needed to read each other’s code at scale.</p>
+<p>The constraint of this era isn’t reading or writing. It’s trusting. If you’re starting a new system in 2026 that will be meaningfully AI-assisted and needs to live long enough to matter, Rust should be the default, not the interesting alternative.</p>
+<p>The compiler has always been right. Now it’s affordable.</p> </div> </article>  </main> <footer data-astro-cid-sckkx6r4> <div class="container footer-inner" data-astro-cid-sckkx6r4> <a href="/" class="footer-name" data-astro-cid-sckkx6r4>Shashi Budati</a> <div class="footer-links" data-astro-cid-sckkx6r4> <a href="mailto:shashibudati@gmail.com" aria-label="Email" data-astro-cid-sckkx6r4>Email</a> <a href="https://www.github.com/shashi-budati" target="_blank" rel="noopener" aria-label="GitHub" data-astro-cid-sckkx6r4>GitHub</a> <a href="https://www.linkedin.com/in/shashi-budati/" target="_blank" rel="noopener" aria-label="LinkedIn" data-astro-cid-sckkx6r4>LinkedIn</a> </div> </div> </footer> </body></html> 
